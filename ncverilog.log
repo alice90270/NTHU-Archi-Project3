@@ -1,0 +1,88 @@
+ncverilog: 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on May 01, 2016 at 18:05:22 CST
+ncverilog
+	Simple_Single_CPU.v
+	Data_Memory.v
+	Reg_File.v
+	Instr_Memory.v
+	Adder.v
+	ALU.v
+	ALU_Ctrl.v
+	Decoder.v
+	MUX_2to1.v
+	ProgramCounter.v
+	Shift_Left_Two_32.v
+	Sign_Extend.v
+	Test_Bench.v
+Recompiling... reason: file './Test_Bench.v' is newer than expected.
+	expected: Sun May  1 18:04:27 2016
+	actual:   Sun May  1 18:05:20 2016
+file: Test_Bench.v
+	module worklib.TestBench:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.TestBench:v <0x5a4e0f16>
+			streams:   4, words:  1962
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                17      13
+		Registers:              28      25
+		Scalar wires:           11       -
+		Vectored wires:         56       -
+		Always blocks:          15      12
+		Initial blocks:          3       3
+		Cont. assignments:       7      38
+		Pseudo assignments:      8       8
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.TestBench:v
+Loading snapshot worklib.TestBench:v .................... Done
+*Verdi3* Loading libsscore_ius141.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "testcase.txt".
+            File: ./Instr_Memory.v, line = 40, pos = 35
+           Scope: TestBench.cpu.IM
+            Time: 0 FS + 0
+
+$0: 0x0
+$1: 0x5
+$2: 0x6
+$3: 0x1
+$4: 0x11
+$5: 0x10
+$6: 0x10
+$7: 0x1
+$8: 0x11
+$9: 0x0
+$10: 0x0
+$11: 0x0
+$12: 0x0
+$13: 0x0
+$14: 0x0
+$15: 0x0
+$16: 0x0
+$17: 0x0
+$18: 0x0
+$19: 0x0
+$20: 0x0
+$21: 0x0
+$22: 0x0
+$23: 0x0
+$24: 0x0
+$25: 0x0
+$26: 0x0
+$27: 0x0
+$28: 0x0
+$29: 0x0
+$30: 0x0
+$31: 0x0
+Simulation complete via $finish(1) at time 2010 NS + 0
+./Test_Bench.v:41     #(`CYCLE_TIME*`END_COUNT)	$finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on May 01, 2016 at 18:05:23 CST  (total: 00:00:01)

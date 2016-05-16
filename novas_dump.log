@@ -1,0 +1,112 @@
+ncsim 14.10-s005
+Linux 2.6.18-398.el5 #1 SMP Tue Sep 16 20:50:52 EDT 2014 x86_64
+CPU cores: 16
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		1024
+memorylocked	32 kbytes
+maxproc			386157
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+VCS_HOME=/usr/cad/synopsys/vcs-mx/cur
+SOFT_MAN_DIR=/usr/cad/synopsys/coreconsultant/cur/doc/dware/man
+SHELL=/bin/tcsh
+PCTHOME=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/pc
+MACHTYPE=x86_64
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+CWR_USING_LNX_KERNEL_THREADS=1
+SSH_CONNECTION=192.168.75.200 32870 192.168.75.52 22
+PATH=/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/usr/cad/cadence/CTOS/cur/tools.lnx86/bin:/usr/cad/cadence/MMSIM/cur/tools/dfII/bin:/usr/cad/cadence/MMSIM/cur/tools/bin:/usr/cad/cadence/EXT/cur/tools/bin:/usr/cad/cadence/ETS/cur/tools/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/cad/cadence/IC/cur/tools/dfII/bin:/usr/cad/cadence/IC/cur/tools/dracula/bin:/usr/cad/cadence/IC/cur/tools/bin:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/pc/bin:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/InnoGUI/Innovator/Bin:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/tools/bin:/usr/cad/synopsys/icc/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/coreconsultant/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/synopsys/vcs-mx/cur/bin:/usr/cad/synopsys/vcs-mx/cur/linux/bin:/usr/cad/synopsys/vcs-mx/cur/linux/util:/usr/cad/synopsys/vcs-mx/cur/linux/flexlm:/usr/bin/X11:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin
+LM_LICENSE_FILE=5280@lsnctu:5280@lscic:26585@lscic:26585@lsnctu:8224@lscic.cic.org.tw
+SNPS_VP_HTYPE=linux
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+ENCOUNTER=/usr/cad/cadence/EDI/cur/tools/fe
+SNPS_VP_PRODUCT=PA
+SSH_TTY=/dev/pts/44
+COWARE_MONITORS_PATH=/users/course/2016S/cs410002/archi032/.synopsys/monitors:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/IP
+VENDOR=unknown
+COWAREHT=linux
+LS_COLORS=no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:
+SHLIB_PATH=/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX
+OA_HOME=/usr/cad/cadence/EDI/cur/oa
+DISPLAY=localhost:14.0
+COWARE_PRODUCT=PA
+PWD=/users/course/2016S/cs410002/archi032/p2
+G_BROKEN_FILENAMES=1
+MANPATH=:/usr/cad/synopsys/synthesis/cur/doc/syn/man:/usr/cad/synopsys/coreconsultant/cur/doc/dware/man
+HOME=/users/course/2016S/cs410002/archi032
+SYNOPSYS=/usr/cad/synopsys/icc/cur
+LD_LIBRARY_PATH=/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:::/usr/cad/cadence/EDI/cur//tools/tlfUtil/lib:/usr/cad/cadence/CTOS/cur/tools.lnx86/lib:/usr/cad/cadence/MMSIM/cur/tools/lib:/usr/cad/cadence/EXT/cur/tools/lib:/usr/cad/cadence/ETS/cur/tools/lib:/usr/cad/cadence/CONFRML/cur/tools/lib:/usr/cad/cadence/IC/cur/tools/lib:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/dmtools/lib:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/pc/lib:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/common/lib-any:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/common/libso-gcc-4.7.2:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/gnu/gcc-4.7.2/lib:/usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/dmtools/lib:/lib
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+LOGNAME=archi032
+VCS_CC=gcc
+HOSTNAME=ic22.cs.nthu.edu.tw
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+OSTYPE=linux
+SHLVL=1
+COWAREHOME=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux
+USER=archi032
+SNPS_VIEW_CONFIG_PATH=/users/course/2016S/cs410002/archi032/.synopsys/viewconfig:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/IP:/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/common/etc/viewconfig
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+REMOTEHOST=nthucad.cs.nthu.edu.tw
+CVS_RSH=ssh
+MAKEFLAGS=
+MFLAGS=
+SSH_CLIENT=192.168.75.200 32870 22
+MAIL=/var/spool/mail/archi032
+COWARE_AUX_BIN=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/common/bin
+COWARE_JRE=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux/../linux/java
+COWAREDOC_INSTALLED_AT=/usr/cad/synopsys/pa_virtualizer/vJ-2014.12/Documentation
+OAHOME=/usr/cad/cadence/oa_v22.04.073
+HOSTTYPE=x86_64-linux
+VERPLEX_HOME=/usr/cad/cadence/CONFRML/cur
+SNPS_VP_DOC=/usr/cad/synopsys/pa_virtualizer/vJ-2014.12/Documentation
+COWARE_CXX_COMPILER=gcc-4.7.2
+GROUP=cs410002
+CDS_Netlisting_Mode=Analog
+INPUTRC=/etc/inputrc
+SNPS_VP_HOME=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux
+LANG=en_US
+TERM=xterm
+HOST=ic22.cs.nthu.edu.tw
+MAKELEVEL=1
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.14.10.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=Simple_Single_CPU.v
+argv[2]=Data_Memory.v
+argv[3]=Reg_File.v
+argv[4]=Instr_Memory.v
+argv[5]=Adder.v
+argv[6]=ALU.v
+argv[7]=ALU_Ctrl.v
+argv[8]=Decoder.v
+argv[9]=MUX_2to1.v
+argv[10]=ProgramCounter.v
+argv[11]=Shift_Left_Two_32.v
+argv[12]=Sign_Extend.v
+argv[13]=Test_Bench.v
+102 profile - 100
+          CPU/Mem usage: 0.050 sys,  0.030 user,  48.72M sys,  0.00M vm
+103 VC callback profile - scalar:0 vector:0
+104 Sun May  1 18:05:23 2016
+105 pliAppInit
+106 *Verdi3* : Enable Parallel Dumping.
+107 pliAppMiscSet: New Sim Round
+108 pliEntryInit
+109 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius141.so through $LD_LIBRARY_PATH setting.
+110 Sim process exit
