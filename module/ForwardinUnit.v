@@ -15,6 +15,10 @@ output reg [1:0] ForwardA,ForwardB;
 
 always@(*)begin
 
+ForwardA = 2'b00;
+ForwardB = 2'b01;
+
+
 // add your code here
 
 end
