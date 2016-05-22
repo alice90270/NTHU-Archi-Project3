@@ -36,7 +36,7 @@ initial  begin
     RST = 0;
 	count = 0;
 
-	$readmemb("testcase_0.txt", cpu.IM.Instr_Mem);
+	$readmemb("testcase.txt", cpu.IM.Instr_Mem);
     #(`CYCLE_TIME/2)      RST = 1;
     #(`CYCLE_TIME*`END_COUNT)	$finish;
 end
@@ -49,6 +49,8 @@ always@(posedge CLK) begin
       $display("$%0d: 0x%08x", i, cpu.RF.Reg_File[i]);
 		end
 	end
+	$display("$%0d: 0x%08x", 1, cpu.RF.Reg_File[1]);
+	$display("$%0d: 0x%08x", 9, cpu.RF.Reg_File[9]);
 end
   
 endmodule

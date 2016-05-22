@@ -35,6 +35,7 @@ always@(*)begin
 		2'b00:data_o <= data0_i;
 		2'b01:data_o <= data1_i;
 		2'b10:data_o <= data2_i;
+		default:data_o <= data0_i;
 	endcase
 		
 end

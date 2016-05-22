@@ -55,7 +55,7 @@ always@(*)begin
 		//$display("=====SUB======");
 		end
 		4'b0111:begin//SLT
-			if(src1_i<src2_i)
+			if($signed(src1_i)<$signed(src2_i))
 				result_o <= 1;
 			else
 				result_o <= 0;

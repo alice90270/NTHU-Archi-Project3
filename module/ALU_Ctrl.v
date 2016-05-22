@@ -36,11 +36,11 @@ always@(funct_i or ALUOp_i) begin
 	case(ALUOp_i)
         8'h00: begin //R-type
                 case(funct_i)
-                    `AND:	ALUCtrl_o <= 4'b0000;
-					`OR:	ALUCtrl_o <= 4'b0001; 
-					`ADD:	ALUCtrl_o <= 4'b0010;
-					`SUB:	ALUCtrl_o <= 4'b0110;
-					`SLT:	ALUCtrl_o <= 4'b0111;
+                    `AND:	ALUCtrl_o <= 4'b0000; //0
+					`OR:	ALUCtrl_o <= 4'b0001; //1
+					`ADD:	ALUCtrl_o <= 4'b0010; //2
+					`SUB:	ALUCtrl_o <= 4'b0110; //6
+					`SLT:	ALUCtrl_o <= 4'b0111; //7
                     default: ALUCtrl_o = 4'b1111;
                 endcase
             end
@@ -57,5 +57,8 @@ always@(funct_i or ALUOp_i) begin
         default:
 			ALUCtrl_o <= 4'b0010;
     endcase
+	//$display("ALUOp_i=%h",ALUOp_i);	
+	//$display("funct_i=%h",funct_i);
+	//$monitor("ALU ctrl=%b",ALUCtrl_o);
 end
 endmodule
