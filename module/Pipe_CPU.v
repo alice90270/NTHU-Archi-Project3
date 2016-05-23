@@ -94,7 +94,8 @@ wire [32-1:0] data_i1;
 wire [32-1:0] data_i2;
 wire [32-1:0] data_o;
 
-
+wire testread;
+wire testwrite;
 /**** WB stage ****/
 //control signal...
 wire reg_write;
@@ -256,10 +257,12 @@ Pipe_Reg #(.size(1)) EX_MEM5(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(EX_beq_ctr
 Pipe_Reg #(.size(32)) EX_MEM6(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(beq_sum),	.data_o(beq_addr)	);
 Pipe_Reg #(.size(1)) EX_MEM7(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(zero),	.data_o(is0)	);
 Pipe_Reg #(.size(32)) EX_MEM8(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(alu_o),	.data_o(data_i1)	);
-//Pipe_Reg #(.size(32)) EX_MEM9(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(alu_i2),	.data_o(data_i2)	);
+Pipe_Reg #(.size(32)) EX_MEM9(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(rt2),	.data_o(data_i2)	);
 Pipe_Reg #(.size(5)) EX_MEM10(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(rt_or_rd),	.data_o(destination)	);
 
 
+//Pipe_Reg #(.size(1)) testR(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(testread),	.data_o(mem_read)	);
+//Pipe_Reg #(.size(1)) testW(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(testwrite),	.data_o(mem_write)	);
 			   
 //Instantiate the components in MEM stage
 assign is_beq = beq_ctrl & is0;
@@ -267,7 +270,7 @@ assign is_beq = beq_ctrl & is0;
 Data_Memory DM(
      .clk_i(clk_i),
      .addr_i(data_i1),
-     .data_i(alu_i2),
+     .data_i(data_i2),
      .MemRead_i(mem_read), 
      .MemWrite_i(mem_write),
      .data_o(data_o)
@@ -301,7 +304,7 @@ ForwardinUnit FU(
 /****************************************
 *         Signal assignment             *
 ****************************************/
-		
+	/*	
 always @(posedge clk_i) begin
 
 //$monitor("instr=%b",instr);
@@ -317,7 +320,7 @@ if(mem_write==1)
 	$display("***mem_write=%d**",mem_write);
 //$display("W_reg=%d",w_reg);
 $display("address=%d",data_i1);
-$display("value=%d",alu_i2);
+$display("value=%d",data_i2);
 $display("data_o=%d",data_o);
 //$display("pre2=%d",pre2);
 //$display("mux1=%d",mux_i1);
@@ -326,7 +329,7 @@ $display("data_o=%d",data_o);
 
 
 end		
-
+*/
 
 endmodule
 
