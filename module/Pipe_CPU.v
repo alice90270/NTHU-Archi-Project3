@@ -64,7 +64,7 @@ wire [32-1:0] shift_o;
 wire [32-1:0] shift_i;
 wire [32-1:0] rs2;
 wire [32-1:0] rt2;
-wire [32-1:0] RorI;
+wire [32-1:0] rt3;
 wire [32-1:0] alu_i1;
 wire [32-1:0] alu_i2;
 wire zero;
@@ -219,17 +219,17 @@ MUX_3to1 #(.size(32)) Mux1(
         );
 		
 MUX_3to1 #(.size(32)) Mux2(
-        .data0_i(RorI),
+        .data0_i(rt2),
 		.data1_i(pre2),
 		.data2_i(data_i1),
         .select_i(forwardB),
-        .data_o(alu_i2)
+        .data_o(rt3)
 		);
 MUX_2to1 #(.size(32)) Mux3(
-		.data0_i(rt2),
+		.data0_i(rt3),
 		.data1_i(shift_i),
         .select_i(alu_src),
-        .data_o(RorI)
+        .data_o(alu_i2)
         );
 		
 MUX_2to1 #(.size(5)) Mux4(
@@ -257,7 +257,7 @@ Pipe_Reg #(.size(1)) EX_MEM5(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(EX_beq_ctr
 Pipe_Reg #(.size(32)) EX_MEM6(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(beq_sum),	.data_o(beq_addr)	);
 Pipe_Reg #(.size(1)) EX_MEM7(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(zero),	.data_o(is0)	);
 Pipe_Reg #(.size(32)) EX_MEM8(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(alu_o),	.data_o(data_i1)	);
-Pipe_Reg #(.size(32)) EX_MEM9(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(rt2),	.data_o(data_i2)	);
+Pipe_Reg #(.size(32)) EX_MEM9(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(rt3),	.data_o(data_i2)	);
 Pipe_Reg #(.size(5)) EX_MEM10(	.rst_i(rst_i),	.clk_i(clk_i),   .data_i(rt_or_rd),	.data_o(destination)	);
 
 
